@@ -1,0 +1,16 @@
+<div>
+    <nav>
+        <ul class="inline-flex">
+            <li class="mx-5">
+                <a [routerLink]="['mision']" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}" >Misión</a>
+            </li>
+            <li class="mx-5">
+                <a [routerLink]="['vision']" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}">Visión</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

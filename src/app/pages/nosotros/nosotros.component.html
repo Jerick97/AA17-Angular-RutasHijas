@@ -1,14 +1,25 @@
 <div>
-    <nav>
-        <ul class="inline-flex">
-            <li class="mx-5">
-                <a [routerLink]="['mision']" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}" >Misión</a>
-            </li>
-            <li class="mx-5">
-                <a [routerLink]="['vision']" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}">Visión</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="max-w-xl mx-auto text-center py-24 md:py-32">
+        <div class="w-24 h-2 bg-yellow-800 mb-4 mx-auto"></div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6">Nosotros</h2>
+        <p class="font-light text-gray-600 mb-6 leading-relaxed">
+            En esta visión y misión se ve reflejado el compromiso de la empresa de brindar una educación de calidad y personalizada, 
+            que permita desarrollar habilidades y conocimientos para el éxito personal y profesional de sus estudiantes, 
+            también se ve reflejado su compromiso con la innovación y el desarrollo continuo. Asimismo, se menciona el compromiso con un ambiente de
+            aprendizaje seguro e inclusivo, y con brindar un servicio excepcional a todos los miembros de la comunidad educativa.</p>
+    </div>
+    <div class="mt-6 text-center">
+        <nav>
+            <ul class="inline-flex">
+                <li class="mx-5">
+                    <a class="inline-block border-b-4 border-transparent hover:border-yellow-900 font-bold text-2xl md:text-3xl lg:text-3xl mb-6" [routerLink]="['mision']" routerLinkActive="border-yellow-900" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}" >Misión</a>
+                </li>
+                <li class="mx-5">
+                    <a class="inline-block border-b-4 border-transparent hover:border-yellow-900 font-bold text-2xl md:text-3xl lg:text-3xl mb-6" [routerLink]="['vision']" routerLinkActive="border-yellow-900" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}">Visión</a>
+                </li>
+            </ul>
+        </nav>
+    </div> 
 </div>
 
 <div>
